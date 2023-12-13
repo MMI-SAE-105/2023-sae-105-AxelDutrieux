@@ -3,3 +3,7 @@
 @import "button.css";
 @import "section.css";
 @import "footer.css";
+
+/*ajout de fonts*/
+@import url(https://fonts.google.com/specimen/Rethink+Sans?query=rethink);
+@import url(https://fonts.google.com/specimen/Roboto?query=roboto);

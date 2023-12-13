@@ -8,4 +8,8 @@
     --H2-size: 20px;
     --p-size: 18px;
 
+    /*font style*/
+    --H1-style: rethink bold;
+    --H2-style: rethink medium;
+    --body-style: roboto medium;
 }
