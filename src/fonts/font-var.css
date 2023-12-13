@@ -1,0 +1,10 @@
+:root{
+    /*font color*/
+    --H1-color: rgba(255, 255, 255, 1);
+    --font-black: rgba(0, 0, 0, 1);
+
+    /*font size*/
+    --H1-size: 40px;
+    --H2-size: 20px;
+
+}
