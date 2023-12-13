@@ -1,0 +1,41 @@
+.footer{
+    margin-top: 50px;
+    position: absolute;
+    background-color: #60534D;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.footer__h2{
+    font-size: var(--H2-size);
+    font-style: roboto medium;
+    display: block;
+    text-align: center;
+    position:relative;
+    top: 15px;
+}
+
+.footer__p{
+    font-size: var(--p-size);
+    font-style: roboto regular;
+    text-align: center;
+}
+
+.footer__logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer__logo img{
+    width: 48px;
+    height: 48px;
+}
+
+.footer__domain{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
