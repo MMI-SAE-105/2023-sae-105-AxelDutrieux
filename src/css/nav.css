@@ -1,9 +1,53 @@
 .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: grid;
+    place-content: center;  
+    z-index: 1000;
+}
+
+.noscroll
+.noscroll body{
+    overflow: hidden;
+}
+
+
+.nav__ul{
+    list-style: none;
+
+}
+
+.nav__h1{
+    font-size: var(--H1-size);
+    font-style: var(--H1-style);
+    color: var(--H1-color); 
+    margin-bottom: 65px;
+    text-align: center;
+    text-decoration: none;
+    
     
 }
 
+.nav__li{
+    margin-bottom: 65px;
+    text-align: center;
+}
+
 .nav__img{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     z-index: -1;
+}
+
+.nav__cross{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+    right: 15px;
 }
