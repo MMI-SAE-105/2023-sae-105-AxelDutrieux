@@ -35,3 +35,8 @@
     position: absolute;
     right: 15px;
 }
+
+.section__p{
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+}

@@ -9,7 +9,7 @@
 
 .footer__h2{
     font-size: var(--H2-size);
-    font-style: roboto medium;
+    font-style: var(--p-style);
     display: block;
     text-align: center;
     position:relative;
@@ -18,7 +18,7 @@
 
 .footer__p{
     font-size: var(--p-size);
-    font-style: roboto regular;
+    font-style: var(--p-style);
     text-align: center;
 }
 
