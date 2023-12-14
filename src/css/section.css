@@ -40,3 +40,10 @@
     font-size: var(--p-size);
     font-style: var(--p-style);
 }
+
+.section__p--oeuvres{
+    margin-top: 0;
+    margin-left: 45px;
+    position: absolute;
+
+}
