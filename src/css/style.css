@@ -3,6 +3,8 @@
 @import "button.css";
 @import "section.css";
 @import "footer.css";
+@import "oeuvres.css";
+@import "nav.css";
 
 /*ajout de fonts*/
 @import url(https://fonts.google.com/specimen/Rethink+Sans?query=rethink);
