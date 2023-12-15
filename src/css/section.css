@@ -2,7 +2,8 @@
     display: block;
     width: auto;
     height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
+    position: relative;
 }
 
 .section__img{
@@ -37,9 +38,9 @@
 }
 
 .section__p--oeuvres{
-    margin-top: 5px;
-    margin-left: 45px;
     position: absolute;
+    left: 45px;
+    
 
 
 }
@@ -66,22 +67,19 @@
 }
 
 .section__btn--oeuvres{
-    margin-top: 10px;
-    margin-right: 45px;
-    
-
-}
-
-.section__btn--menu{
     position: absolute;
     right: 15px;
+    margin-top: 10px;
+    display: block;   
+
 }
 
 .section__btn{
-    /*le bouton ne touche aucun autre éléments*/
+    display: block;
+}
+
+.section__btn--index{
+    position: absolute;
+    right: 15px;
     margin-top: 10px;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 10px;
-    
 }
