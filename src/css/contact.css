@@ -1,0 +1,36 @@
+.contact{
+    position: relative;
+    display: block;
+    
+}
+
+.contac__div{
+    padding-top: 30px;
+
+}
+
+.contact__btn{
+    position: absolute;
+    margin-top: 10px;
+    right: 15px;    
+    display: block; 
+}
+
+.contact__area{
+    margin: 15px;
+    border: 1px solid #55B5A8;
+    border-radius: 10px;
+}
+
+.contact__label{
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    
+
+}
+
+.contact__label--message{
+    margin-left: 15px;
+    vertical-align: top;
+}
+
