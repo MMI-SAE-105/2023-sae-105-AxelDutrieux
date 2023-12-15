@@ -16,8 +16,21 @@
                 <button class="nav__cross" @click="menu=!menu"><img src="./public/img/Icons-SAe-105/Cross-48.webp" alt="CrossIcon"></button>
                 <ul class="nav__ul">
                     <li class="nav__li"><a class="nav__h1" href="">Le couple Eames</a></li>
-                    <li class="nav__li"><a class="nav__h1" href="./oeuvres.html">Leurs oeuvres</a></li>
-                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Infos pratiques</a></li>
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Oeuvres</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a href="./oeuvres.html">Toutes les oeuvres</a>
+                            <a href="./Oeuvre1.html">St Mary's Church</a>
+                            <a href="./Oeuvre2.html">St Mary's Catholic Church</a>
+                            <a href="./Oeuvre3.html">Meyer House</a>
+                            <a href="./Oeuvre4.html">Dinsmoor House</a>
+                            <a href="./Oeuvre5.html">Dean House</a>
+                            <a href="./Oeuvre6.html">Eames House</a>
+                            <a href="./Oeuvre7.html">Entenza House</a>
+                            <a href="./Oeuvre8.html">De Pree House</a>                  
+                          </span>
+                        </section></li>                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Infos pratiques</a></li>
                 </ul>
             </nav>
         </div>
