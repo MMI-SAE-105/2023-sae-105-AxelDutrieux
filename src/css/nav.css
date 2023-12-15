@@ -45,6 +45,8 @@
 }
 
 .nav__cross{
+    background: none;
+    border: none;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -72,4 +74,5 @@
     font-size: var(--H1-size);
     font-style: var(--H1-style);
     color: var(--H1-color);
+    text-decoration: none;
 }
