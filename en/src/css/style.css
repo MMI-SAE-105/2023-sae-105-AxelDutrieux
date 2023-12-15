@@ -1,0 +1,14 @@
+@import "header.css";
+@import "../fonts/font-var.css";
+@import "button.css";
+@import "section.css";
+@import "footer.css";
+@import "oeuvres.css";
+@import "nav.css";
+@import "ticket.css";
+@import "caroussel.css";
+@import "contact.css";
+
+/*ajout de fonts*/
+@import url(https://fonts.google.com/specimen/Rethink+Sans?query=rethink);
+@import url(https://fonts.google.com/specimen/Roboto?query=roboto);

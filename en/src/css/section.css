@@ -1,0 +1,85 @@
+.section{
+    display: block;
+    width: auto;
+    height: auto;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.section__img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__h2::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+}
+
+.section__h2{
+    font-size: var(--H2-size);
+    font-style: roboto medium;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.section__p{
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+}
+
+.section__p--oeuvres{
+    position: absolute;
+    left: 45px;
+    
+
+
+}
+
+.section__p--architecte{
+    margin-left: 15px;
+}
+
+.section__img--oeuvres{
+    margin-bottom: 0;
+}
+
+.section_img--home{
+    padding-bottom: 40px;
+}
+
+.section__img--architecte{
+    padding-top: 20px;
+}
+
+.section__div{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__btn--oeuvres{
+    position: absolute;
+    right: 15px;
+    margin-top: 10px;
+    display: block;   
+
+}
+
+.section__btn{
+    display: block;
+}
+
+.section__btn--index{
+    position: absolute;
+    right: 15px;
+    margin-top: 10px;
+}

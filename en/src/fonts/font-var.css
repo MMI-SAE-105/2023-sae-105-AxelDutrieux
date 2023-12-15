@@ -1,0 +1,16 @@
+:root{
+    /*font color*/
+    --H1-color: rgba(255, 255, 255, 1);
+    --font-black: rgba(0, 0, 0, 1);
+
+    /*font size*/
+    --H1-size: 40px;
+    --Hmenu-size: 30px;
+    --H2-size: 20px;
+    --p-size: 18px;
+
+    /*font style*/
+    --H1-style: rethink bold;
+    --H2-style: rethink medium;
+    --body-style: roboto medium;
+}

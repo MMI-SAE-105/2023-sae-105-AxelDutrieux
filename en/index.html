@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Eames Exposition</title>
+</head>
+<body>
+    <header class="header">
+        <div x-data="{menu: false}">
+            <button @click="menu=!menu"><img class="header__menu" src="./public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <img class="nav__img" src="./public/img/Menu-SAE-105/Group 13.webp" alt="Wallpaper">
+                <button class="nav__cross" @click="menu=!menu"><img src="./public/img/Icons-SAe-105/Cross-48.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__h1" href="">The Eames couple</a></li>
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Works</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a href="./oeuvres.html">All Works</a>
+                            <a href="./Oeuvre1.html">St Mary's Church</a>
+                            <a href="./Oeuvre2.html">St Mary's Catholic Church</a>
+                            <a href="./Oeuvre3.html">Meyer House</a>
+                            <a href="./Oeuvre4.html">Dinsmoor House</a>
+                            <a href="./Oeuvre5.html">Dean House</a>
+                            <a href="./Oeuvre6.html">Eames House</a>
+                            <a href="./Oeuvre7.html">Entenza House</a>
+                            <a href="./Oeuvre8.html">De Pree House</a>                  
+                          </span>
+                        </section></li>
+                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Pratical Inforamtion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="./billeterie.html"><img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
+        </a>
+        <a href="./index.html"><img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo"></a>
+        <a href="./billeterie.html"><img class="header__wallpaper" src="public/img/Menu-SAE-105/Accueil__Img.webp" alt="wallpaper"></a>
+        <h1 class="header__h1">Charles and Ray Eames <br>The great exposition !</h1>
+        </nav>
+        <button  @click="scroll" class="header__down"><img src="./public/img/Icons-SAe-105/Down-48.webp" alt="DownIcon"></button>
+    </header>
+    <main>
+        <section class="section">
+            <h2 class="section__h2">Come to discover the exposition !</h2>
+            <img class="section__img section__img--home" src="./public/img/Image-SAE-105/image 2.webp" alt="Ray & Charles Eames">
+            <p class="section_p">Discover the story of this American couple who left their mark on interior design and architecture! <br>Visit Fondation Cartier from April 13, 2024 to June 23, 2024 to explore the couple's story.</p>
+            <button onclick="window.location='InfoPratique.html'" class="button section__btn section__btn--index">See more</button>
+        </section>
+        <section class="section">
+            <h2 class="section__h2">Architecture as a couple</h2>
+            <img class="section__img section__img--home" src="./public/img/Image-SAE-105/image 3.webp" alt="Charles & Ray Eames">
+            <p class="section_p">Colleagues and married, passionate about the same field. After meeting at the Cranbrook Academy of Art in 1940, they shared the same destiny, and their contribution to the world of design and architecture is still felt today. <br>Learn more and get ready to travel!</p>
+            <button onclick="window.location='Architecte.html'" class="button section__btn section__btn--index">See more</button>
+        </section>
+        <section class="section">
+            <h2 class="section__h2">Works in the Eames style</h2>
+            <img class="section__img section__img--home" src="./public/img/Image-SAE-105/image 2-1.webp" alt="Eames House">
+            <p class="section__p">From American-style houses to church buildings, the couple have been able to get to grips with different structural styles. That said, it's one of their strengths that goes hand in hand with their technical expertise.</p>
+            <button onclick="window.location='oeuvres.html'" class="button section__btn section__btn--index">See more</button>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <a href="./InfoPratique.html"><h2 class="footer__h2">Informations</h2></a>
+            <a href="./billeterie.html">Tickets</a><p class="footer__p">Billeterie</p>
+            <p class="footer__p">Contact</p>
+        </div>
+        <div class="footer__logo">
+            <img src="public/img/Icons-SAe-105/Instagram-48.webp" alt="InstagramIcon">
+            <img src="public/img/Icons-SAe-105/Facebook-48.webp" alt="FacebookIcon">
+            <img src="public/img/Icons-SAe-105/TwitterX-48.webp" alt="TwitterIcon">
+        </div>
+        <div>
+            <p class="footer__domain">Ddesign 2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

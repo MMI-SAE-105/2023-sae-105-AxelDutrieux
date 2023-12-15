@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div x-data="{menu: false}">
+            <button @click="menu=!menu"><img class="header__menu" src="./public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <img class="nav__img" src="./public/img/Menu-SAE-105/Group 13.webp" alt="Wallpaper">
+                <button class="nav__cross" @click="menu=!menu"><img src="./public/img/Icons-SAe-105/Cross-48.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__h1" href="">Le couple Eames</a></li>
+                    <li class="nav__li"><div class="accordeon">
+                        <section x-data="{open: false}">
+                          <button class="nav__btn" @click="open=!open">Oeuvres</button>
+                          <span x-collapse class="nav__span" x-show="open" x-transition.duration.500ms>
+                            <a href="./oeuvres.html">Toutes les oeuvres</a>
+                            <a href="./Oeuvre1.html">St Mary's Church</a>
+                            <a href="./Oeuvre2.html">St Mary's Catholic Church</a>
+                            <a href="./Oeuvre3.html">Meyer House</a>
+                            <a href="./Oeuvre4.html">Dinsmoor House</a>
+                            <a href="./Oeuvre5.html">Dean House</a>
+                            <a href="./Oeuvre6.html">Eames House</a>
+                            <a href="./Oeuvre7.html">Entenza House</a>
+                            <a href="./Oeuvre8.html">De Pree House</a>                  
+                          </span>
+                        </section></li>                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Infos pratiques</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="./billeterie.html"><img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
+        </a>
+        <a href="./index.html"><img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo"></a>
+        <a href="./billeterie.html"><img class="header__wallpaper" src="public/img/Menu-SAE-105/Accueil__Img.webp" alt="wallpaper"></a>
+        <h1 class="header__h1">St Mary's Catholic Church</h1>
+        </nav>
+        <button class="header__down"><img src="./public/img/Icons-SAe-105/Down-48.webp" alt="DownIcon"></button>
+
+    </header>
+    <section class="section">
+        <h2 class="section__h2">Informations</h2>
+        <img class="section__img" src="public/img/Image-SAE-105/image 8-6.webp" alt="Entenza House">
+        <p class="section__p">Date : </p>
+        <p class="section__p">Prix : </p>
+        <p class="section__p">m² : </p>
+        <p class="section__p">Lieu : </p>
+    </section>
+    <section class="section">
+        <h2 class="section__h2">Histoire</h2>
+        <p class="section__p">Histoire de la batisse, pourquoi est-elle construite ?</p>
+    </section>
+    <footer class="footer">
+        <div class="footer__div">
+            <a href="./InfoPratique.html"><h2 class="footer__h2">Informations</h2></a>
+            <a href="./billeterie.html">Billeterie</a><p class="footer__p">Billeterie</p>
+            <p class="footer__p">Contact</p>
+        </div>
+        <div class="footer__logo">
+            <img src="public/img/Icons-SAe-105/Instagram-48.webp" alt="InstagramIcon">
+            <img src="public/img/Icons-SAe-105/Facebook-48.webp" alt="FacebookIcon">
+            <img src="public/img/Icons-SAe-105/TwitterX-48.webp" alt="TwitterIcon">
+        </div>
+        <div>
+            <p class="footer__domain">Ddesign 2023</p>
+        </div>
+    </footer>
+</body>
