@@ -6,6 +6,7 @@
 @import "oeuvres.css";
 @import "nav.css";
 @import "ticket.css";
+@import "caroussel.css";
 
 /*ajout de fonts*/
 @import url(https://fonts.google.com/specimen/Rethink+Sans?query=rethink);

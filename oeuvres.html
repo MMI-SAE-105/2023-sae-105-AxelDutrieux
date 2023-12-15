@@ -78,51 +78,50 @@
                 <button class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
-        <section class="section">
-            <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-                <button @click="parent=$refs.parent; parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button>
-                <button @click="parent=$refs.parent; parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>        
-            <div class="carrousel__parent-ecrans" x-ref="parent"  @scroll.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                <div id="ecran-1" class="carrousel__ecran">
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="parent=$refs.parent; parent.scrollLeft -= parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button>
+            <button @click="parent=$refs.parent; parent.scrollLeft += parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"  @scroll.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
                     <figure>
-                        <img class="section__img" src="./public/img/Image-SAE-105/image 8-7.webp" alt="image ecran 1">
-                        <figcaption>St Mary's Church</figcaption>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-7.webp" alt="image ecran 1">
+                        <figcaption>1934</figcaption>
                     </figure>
                 </div>
-                <div id="ecran-2" class="carrousel__ecran">
+                <div id="ecran-2" class="carrousel_ecran">
                     <figure>
-                        <img class="section__img" src="./public/img/Image-SAE-105/image 8-3.webp" alt="image ecran 2">
-                        <figcaption>St Mary's Catholic Church</figcaption>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-3.webp" alt="image ecran 2">
+                        <figcaption>1935</figcaption>
                     </figure>
                 </div>
-                <div id="ecran-3" class="carrousel__ecran">
+                <div id="ecran-3" class="carrousel_ecran">
                     <figure>
-                        <img class="section__img" src="./public/img/Image-SAE-105/image 8-1.webp" alt="image ecran 3">
-                        <figcaption>Meyer House</figcaption>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-1.webp" alt="image ecran 3">
+                        <figcaption>1936-38</figcaption>
                     </figure>
                 </div>
-                <div id="ecran-4" class="carrousel__ecran">
+                <div id="ecran-4" class="carrousel_ecran">
                     <figure>
-                        <img class="section__img" src="./public/img/Image-SAE-105/image 8.webp" alt="image ecran 4">
-                        <figcaption>Dinsmoor House</figcaption>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8.webp" alt="image ecran 4">
+                        <figcaption>1936</figcaption>
                     </figure>
                 </div>
-                <div id="ecran-5" class="carrousel__ecran">
+                <div id="ecran-5" class="carrousel_ecran">
                     <figure>
-                        <img class="section__img" src="./public/img/Image-SAE-105/image 8-5.webp" alt="image ecran 5">
-                        <figcaption>Dean House</figcaption>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-5.webp" alt="image ecran 5">
+                        <figcaption>1936</figcaption>
                     </figure>
                 </div>
             </div>
             <ul class="caroussel_liste-liens">
-                <li><a href="#ecran-1" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-1'}">Springboks</a></li>
-                <li><a href="#ecran-2" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-2'}">Ireland</a></li>
-                <li><a href="#ecran-3" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-3'}">All blacks</a></li>
-                <li><a href="#ecran-4" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-4'}">France</a></li>
-                <li><a href="#ecran-5" class="caroussel__lien" :class="{actif:hrefCourant==='#ecran-5'}">Angleterre</a></li>
+                <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">St Mary's Church</a></li>
+                <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">St Mary's Catholic Church</a></li>
+                <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Meyer House</a></li>
+                <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Dinsmoor House</a></li>
+                <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Dean House</a></li>
             </ul>
         </div>
-        </section>
+
         <footer class="footer">
             <div class="footer__div">
                 <h2 class="footer__h2">Informations</h2>

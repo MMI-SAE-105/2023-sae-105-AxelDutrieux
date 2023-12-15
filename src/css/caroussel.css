@@ -1,19 +1,43 @@
-.carrousel {
-    position: relative;
-  }
+* {
+    /* change le box model */
+    box-sizing: border-box;
 
-.carrousel__ecran {
+}
+img {
+    /* image responsive, largeur maxi */
+    max-width: 100%;
+    /* hauteur "auto" */
+    height: auto;
+  
+}
+.carrousel_parent-ecrans {
+    /* aligne horizontalement les enfants */
+    display: flex;
+    /* largeur du parent */
     width: 100%;
+    overflow-x: scroll; /* permet de scroller horizontalement */
+    scroll-behavior: smooth; /* animation de défilement */
+    scroll-snap-type: x mandatory; /* permet de scroller par blocs */
+
+
+
+}
+.carrousel_ecran {
+    /* largeur du parent pour chaque enfant */
+    width: 100%;
+    /* permet de garder toute la largeur du parent */
     flex: none;
-    scroll-snap-align: start;
+    scroll-snap-align: start; /* aligne les enfants par blocs */
     
 }
-
-.carrousel__ecran figure {
+.carrousel_ecran figure {
+    /* enlève les marges par défaut */
     margin: 0;
 }
-
-.carrousel__btn {
+.carrousel {
+  position: relative;
+}
+.carrousel_btn {
     position: absolute;
     top: 50%;
     top: calc(
@@ -22,28 +46,26 @@
     transform: translateY(-50%); /* methode du point mort */
     width: 2rem;
     height: 2rem;
-    background: rgba(0,0,0,0.5);
+    background: #55B5A8;
     border-radius: 50%;
     border: none;
     display: grid;
     place-content: center;
     color: #fff;
   }
-
-  .carrousel__btn-avant {
+  .carrousel_btn-avant {
     left: 0;
     position: absolute;
     margin-top: 50px;
   
   }
-
-  .carrousel__btn-apres {
+  
+  .carrousel_btn-apres {
     right: 0;
     position: absolute;
     margin-top: 50px;
   }
-
-  .caroussel__liste-liens {
+  .caroussel_liste-liens {
     display: flex;/* aligne horizontalement les enfants */
     justify-content: center;/* centre horizontalement les enfants */
     margin: 0;/* enlève les marges par défaut */
@@ -53,9 +75,19 @@
     margin-top: 10px;
     
 }
-
 .actif {
-    color: red;
+    color: #55B5A8;
     font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
+}
+.titre {
+    text-align: center;
+}
+.picture {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
