@@ -1,5 +1,8 @@
 .ticket__btn{
-
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ticket__p{
