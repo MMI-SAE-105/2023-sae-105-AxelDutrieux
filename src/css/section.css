@@ -65,13 +65,23 @@
     flex-direction: column;
 }
 
-.sevtion__btn--oeuvres{
+.section__btn--oeuvres{
     margin-top: 10px;
     margin-right: 45px;
-    position: absolute;
+    
+
 }
 
 .section__btn--menu{
     position: absolute;
     right: 15px;
+}
+
+.section__btn{
+    /*le bouton ne touche aucun autre éléments*/
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 10px;
+    
 }

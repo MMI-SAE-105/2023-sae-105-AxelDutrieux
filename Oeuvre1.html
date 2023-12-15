@@ -10,11 +10,24 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__menu" src="public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon">
-        <img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
-        <img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo">
-        <img class="header__wallpaper" src="public/img/Menu-SAE-105/Group 12.webp" alt="wallpaper">
-        <h1 class="header__h1">Entenza House</h1>
+        <div x-data="{menu: false}">
+            <button @click="menu=!menu"><img class="header__menu" src="./public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <img class="nav__img" src="./public/img/Menu-SAE-105/Group 13.webp" alt="Wallpaper">
+                <button class="nav__cross" @click="menu=!menu"><img src="./public/img/Icons-SAe-105/Cross-48.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__h1" href="">Le couple Eames</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="./oeuvres.html">Leurs oeuvres</a></li>
+                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Infos pratiques</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="./billeterie.html"><img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
+        </a>
+        <a href="./index.html"><img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo"></a>
+        <a href="./billeterie.html"><img class="header__wallpaper" src="public/img/Menu-SAE-105/Accueil__Img.webp" alt="wallpaper"></a>
+        <h1 class="header__h1">St Marys' Church</h1>
+        </nav>
     </header>
     <section class="section">
         <h2 class="section__h2">Informations</h2>

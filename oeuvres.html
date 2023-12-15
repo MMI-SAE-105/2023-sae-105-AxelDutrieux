@@ -10,11 +10,24 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__menu" src="public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon">
-        <img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
-        <img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo">
-        <img class="header__wallpaper" src="public/img/Menu-SAE-105/Accueil__Img.webp" alt="wallpaper">
-        <h1 class="header__h1">Leurs oeuvres</h1>
+        <div x-data="{menu: false}">
+            <button @click="menu=!menu"><img class="header__menu" src="./public/img/Icons-SAe-105/Menu-48.webp" alt="MenuIcon"></button>
+            <nav class="nav" x-show="menu" x-transition.duration.500ms>
+                <img class="nav__img" src="./public/img/Menu-SAE-105/Group 13.webp" alt="Wallpaper">
+                <button class="nav__cross" @click="menu=!menu"><img src="./public/img/Icons-SAe-105/Cross-48.webp" alt="CrossIcon"></button>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__h1" href="">Le couple Eames</a></li>
+                    <li class="nav__li"><a class="nav__h1" href="./oeuvres.html">Leurs oeuvres</a></li>
+                    <li class="nav__li"><a  class="nav__h1" href="./InfoPratique.html">Infos pratiques</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="./billeterie.html"><img class="header__ticket" src="public/img/Icons-SAe-105/Ticket-48.webp" alt="TicketIcon">
+        </a>
+        <a href="./index.html"><img class="header__logo" src="public/img/Icons-SAe-105/Eames.png" alt="Logo"></a>
+        <a href="./billeterie.html"><img class="header__wallpaper" src="public/img/Menu-SAE-105/Accueil__Img.webp" alt="wallpaper"></a>
+        <h1 class="header__h1">Charles et Ray Eames <br>La grande exposition !</h1>
+        </nav>
     </header>
     <main>
         <section class="section">
@@ -26,56 +39,56 @@
             <img class="section__img" src="public/img/Image-SAE-105/image 8.webp" alt="Dinsmoor House">
             <div class="section__div">
                 <p class="section__p section__p--oeuvres">Dinsmoor House</p>
-                <button class="button section__btn">Découvrir</button>
+                <button onclick="window.location='./Oeuvre4.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-5.webp" alt="Dean House">
             <div class="section__div">
                 <p class="section__p">Dean House</p>
-                <button class="button section__btn">Découvrir</button>
+                <button onclick="window.location='./Oeuvre5.html'" class="button section__btn" >Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-4.webp" alt="Eames House">
             <div class="section__div">
                 <p class="section__p">Eames House</p>
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre6.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-6.webp" alt="Entenza House">
            <div class="section__div">
                 <p class="section__p">Entenza House</p>
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre7.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
            </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-2.webp" alt="De Pree House">
             <div class="section__div">
                 <p class="section__p">De Pree House</p>
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre8.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-1.webp" alt="Meyer House">
             <div class="section__div">
                 <p class="section__p">Meyer House</p>
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre3.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-7.webp" alt="St Mary's Church">
             <div class="section__div">
                 <p class="section__p">St Mary's Church</p> 
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre1.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <section class="section">
             <img class="section__img" src="public/img/Image-SAE-105/image 8-3.webp" alt="St Mary's Catholic Church">
             <div class="section__div">
                 <p class="section__p">St Mary's Catholic Church</p>
-                <button class="button section__btn section__btn--oeuvres">Découvrir</button>
+                <button onclick="window.location='./Oeuvre2.html'" class="button section__btn section__btn--oeuvres">Découvrir</button>
             </div>
         </section>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
@@ -112,6 +125,24 @@
                         <figcaption>1936</figcaption>
                     </figure>
                 </div>
+                <div id="ecran-6" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-4.webp" alt="image ecran 5">
+                        <figcaption>1936</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-7" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-6.webp" alt="image ecran 5">
+                        <figcaption>1936</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-8" class="carrousel_ecran">
+                    <figure>
+                        <img class="picture" src="./public/img/Image-SAE-105/image 8-2.webp" alt="image ecran 5">
+                        <figcaption>1936</figcaption>
+                    </figure>
+                </div>
             </div>
             <ul class="caroussel_liste-liens">
                 <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">St Mary's Church</a></li>
@@ -119,6 +150,9 @@
                 <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Meyer House</a></li>
                 <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Dinsmoor House</a></li>
                 <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Dean House</a></li>
+                <li><a href="ecran-6" class="caroussel_lien" :class="{actif:hrefcourant==='#ecran_6'}">Eames House</a></li>
+                <li><a href="ecran-7" class="caroussel_lien" :class="{actif:hrefcourant==='#ecran_7'}">Entenza House</a></li>
+                <li><a href="ecran-8" class="caroussel_lien" :class="{actif:hrefcourant==='#ecran_8'}">De Pree House</a></li>
             </ul>
         </div>
 

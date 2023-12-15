@@ -66,12 +66,13 @@ img {
     margin-top: 50px;
   }
   .caroussel_liste-liens {
-    display: flex;/* aligne horizontalement les enfants */
-    justify-content: center;/* centre horizontalement les enfants */
-    margin: 0;/* enlève les marges par défaut */
-    padding: 0;/* enlève les padding par défaut */
-    list-style: none;/* enlève les puces par défaut */
-    gap: 1rem;/* espace entre les enfants */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
     margin-top: 10px;
     
 }
