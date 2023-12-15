@@ -44,12 +44,20 @@
 
 }
 
+.section__p--architecte{
+    margin-left: 15px;
+}
+
 .section__img--oeuvres{
     margin-bottom: 0;
 }
 
 .section_img--home{
     padding-bottom: 40px;
+}
+
+.section__img--architecte{
+    padding-top: 20px;
 }
 
 .section__div{

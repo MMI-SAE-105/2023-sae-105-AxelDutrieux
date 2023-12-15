@@ -1,0 +1,61 @@
+.carrousel {
+    position: relative;
+  }
+
+.carrousel__ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    
+}
+
+.carrousel__ecran figure {
+    margin: 0;
+}
+
+.carrousel__btn {
+    position: absolute;
+    top: 50%;
+    top: calc(
+      min(500px, 100vw) / 16 * 9 / 2 + 1rem
+    ); /* centre verticalement ~50% vertical */
+    transform: translateY(-50%); /* methode du point mort */
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+  }
+
+  .carrousel__btn-avant {
+    left: 0;
+    position: absolute;
+    margin-top: 50px;
+  
+  }
+
+  .carrousel__btn-apres {
+    right: 0;
+    position: absolute;
+    margin-top: 50px;
+  }
+
+  .caroussel__liste-liens {
+    display: flex;/* aligne horizontalement les enfants */
+    justify-content: center;/* centre horizontalement les enfants */
+    margin: 0;/* enlève les marges par défaut */
+    padding: 0;/* enlève les padding par défaut */
+    list-style: none;/* enlève les puces par défaut */
+    gap: 1rem;/* espace entre les enfants */
+    margin-top: 10px;
+    
+}
+
+.actif {
+    color: red;
+    font-size: 1.5rem;
+    transition: all 0.25s ease-in-out;
+}
